@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #eef2f7, #dbeafe);
+    color: #1f2937;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  /* MENU LATERAL */
+  
+  .menu-lateral {
+    width: 270px;
+    background: linear-gradient(180deg, #8b0000, #5c0000);
+    color: white;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 8px 0 30px rgba(0, 0, 0, 0.18);
+  }
+  
+  .marca {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 35px;
+  }
+  
+  .icone-logo {
+    width: 52px;
+    height: 52px;
+    background: white;
+    color: #8b0000;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 900;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .marca h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .marca p {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+  
+  .menu-lateral nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .menu-lateral nav a,
+  .sair a {
+    color: white;
+    text-decoration: none;
+    padding: 13px 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-weight: 500;
+  }
+  
+  .menu-lateral nav a:hover,
+  .menu-lateral nav a.ativo {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateX(5px);
+  }
+  
+  .sair a {
+    display: block;
+    background: rgba(255, 255, 255, 0.12);
+    text-align: center;
+  }
+  
+  /* CONTEÚDO PRINCIPAL */
+  
+  .conteudo-principal {
+    flex: 1;
+    padding: 30px;
+    overflow-x: hidden;
+  }
+  
+  .topo {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 22px 26px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+    margin-bottom: 25px;
+  }
+  
+  .topo h1 {
+    color: #7f0000;
+    font-size: 30px;
+  }
+  
+  .topo p {
+    color: #6b7280;
+    margin-top: 4px;
+  }
+  
+  .usuario {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .usuario div:first-child {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+  
+  .usuario span {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .avatar {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, #8b0000, #dc2626);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+  }
+  
+  /* BANNER */
+  
+  .banner {
+    background: linear-gradient(135deg, #8b0000, #b91c1c);
+    color: white;
+    padding: 34px;
+    border-radius: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    box-shadow: 0 12px 35px rgba(139, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    right: -80px;
+    top: -70px;
+  }
+  
+  .banner h2 {
+    font-size: 34px;
+    margin: 10px 0;
+  }
+  
+  .banner p {
+    max-width: 650px;
+    line-height: 1.6;
+    opacity: 0.95;
+  }
+  
+  .etiqueta {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+  }
+  
+  .banner-card {
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+    padding: 24px;
+    border-radius: 20px;
+    min-width: 220px;
+    z-index: 1;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  
+  .banner-card span {
+    font-size: 14px;
+    opacity: 0.85;
+  }
+  
+  .banner-card strong {
+    display: block;
+    font-size: 34px;
+    margin: 8px 0;
+  }
+  
+  /* CARDS */
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .card {
+    background: white;
+    padding: 24px;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+    border: 1px solid #f1f5f9;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  }
+  
+  .card span {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .card h3 {
+    color: #8b0000;
+    font-size: 34px;
+    margin: 8px 0;
+  }
+  
+  .card p {
+    color: #6b7280;
+  }
+  
+  /* PAINÉIS */
+  
+  .grade {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .painel {
+    background: white;
+    padding: 26px;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  }
+  
+  .titulo-painel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  
+  .titulo-painel h2,
+  .avisos h2 {
+    color: #7f0000;
+  }
+  
+  button {
+    border: none;
+    background: #8b0000;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #b91c1c;
+    transform: scale(1.03);
+  }
+  
+  /* TABELA */
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+  }
+  
+  thead {
+    background: #f8fafc;
+  }
+  
+  th {
+    text-align: left;
+    padding: 14px;
+    color: #4b5563;
+    font-size: 14px;
+  }
+  
+  td {
+    padding: 15px 14px;
+    border-top: 1px solid #edf2f7;
+    color: #374151;
+  }
+  
+  tbody tr:hover {
+    background: #fff7f7;
+  }
+  
+  .badge {
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .aprovado {
+    background: #dcfce7;
+    color: #166534;
+  }
+  
+  .atencao {
+    background: #fef3c7;
+    color: #92400e;
+  }
+  
+  /* AVISOS */
+  
+  .avisos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .aviso {
+    background: #f9fafb;
+    padding: 18px;
+    border-radius: 18px;
+    border-left: 5px solid #8b0000;
+  }
+  
+  .aviso span {
+    color: #8b0000;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .aviso h4 {
+    margin: 8px 0;
+    color: #111827;
+  }
+  
+  .aviso p {
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  
+  /* HORÁRIOS */
+  
+  .lista-horarios {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+  }
+  
+  .lista-horarios div {
+    background: linear-gradient(180deg, #fff, #f9fafb);
+    border: 1px solid #edf2f7;
+    padding: 18px;
+    border-radius: 18px;
+    transition: 0.3s;
+  }
+  
+  .lista-horarios div:hover {
+    border-color: #8b0000;
+    transform: translateY(-4px);
+  }
+  
+  .lista-horarios strong {
+    color: #8b0000;
+  }
+  
+  .lista-horarios p {
+    margin: 10px 0;
+    font-weight: 600;
+  }
+  
+  .lista-horarios span {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  /* RESPONSIVO */
+  
+  @media (max-width: 1100px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .grade {
+      grid-template-columns: 1fr;
+    }
+  
+    .lista-horarios {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .banner {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .menu-lateral {
+      width: 100%;
+    }
+  
+    .topo {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+    }
+  
+    .usuario div:first-child {
+      text-align: left;
+    }
+  
+    .cards,
+    .lista-horarios {
+      grid-template-columns: 1fr;
+    }
+  
+    .conteudo-principal {
+      padding: 18px;
+    }
+  
+    table {
+      font-size: 13px;
+    }
+  
+    th,
+    td {
+      padding: 10px;
+    }
+  }

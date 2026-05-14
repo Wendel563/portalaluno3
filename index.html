@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal do Aluno - FATEC Taquaritinga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <aside class="menu-lateral">
+      <div class="marca">
+        <div class="icone-logo">F</div>
+        <div>
+          <h2>FATEC</h2>
+          <p>Taquaritinga</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#" class="ativo">Início</a>
+        <a href="#">Minhas Notas</a>
+        <a href="#">Frequência</a>
+        <a href="#">Horários</a>
+        <a href="#">Financeiro</a>
+        <a href="#">Biblioteca</a>
+        <a href="#">Configurações</a>
+      </nav>
+
+      <div class="sair">
+        <a href="#">Sair do Portal</a>
+      </div>
+    </aside>
+
+    <main class="conteudo-principal">
+
+      <header class="topo">
+        <div>
+          <h1>Portal do Aluno</h1>
+          <p>Centro Paula Souza • FATEC Taquaritinga</p>
+        </div>
+
+        <div class="usuario">
+          <div>
+            <strong>Nome Aluno</strong>
+            <span>RA: 0220482322020</span>
+          </div>
+          <div class="avatar">N.A</div>
+        </div>
+      </header>
+
+      <section class="banner">
+        <div>
+          <p class="etiqueta">Curso Superior de Tecnologia</p>
+          <h2>Análise e Desenvolvimento de Sistemas</h2>
+          <p>
+            Bem-vindo ao seu portal acadêmico. Acompanhe suas notas,
+            frequência, horários, avisos e situação da matrícula.
+          </p>
+        </div>
+
+        <div class="banner-card">
+          <span>Status da Matrícula</span>
+          <strong>Ativa</strong>
+          <p>2º Semestre • Período Noturno</p>
+        </div>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <span>Coeficiente</span>
+          <h3>8.7</h3>
+          <p>Desempenho geral</p>
+        </div>
+
+        <div class="card">
+          <span>Frequência Média</span>
+          <h3>92%</h3>
+          <p>Dentro do esperado</p>
+        </div>
+
+        <div class="card">
+          <span>Disciplinas</span>
+          <h3>5</h3>
+          <p>Matriculadas</p>
+        </div>
+
+        <div class="card">
+          <span>Pendências</span>
+          <h3>0</h3>
+          <p>Nenhuma pendência</p>
+        </div>
+      </section>
+
+      <section class="grade">
+        <div class="painel notas">
+          <div class="titulo-painel">
+            <h2>Notas e Frequência</h2>
+            <button>Ver boletim completo</button>
+          </div>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Disciplina</th>
+                <th>Professor</th>
+                <th>Nota</th>
+                <th>Frequência</th>
+                <th>Situação</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Desenvolvimento Web I</td>
+                <td>Prof. André</td>
+                <td>9.0</td>
+                <td>95%</td>
+                <td><span class="badge aprovado">Aprovado</span></td>
+              </tr>
+
+              <tr>
+                <td>Algoritmos e Lógica</td>
+                <td>Profª. Mariana</td>
+                <td>8.5</td>
+                <td>90%</td>
+                <td><span class="badge aprovado">Aprovado</span></td>
+              </tr>
+
+              <tr>
+                <td>Banco de Dados</td>
+                <td>Prof. Carlos</td>
+                <td>7.8</td>
+                <td>88%</td>
+                <td><span class="badge aprovado">Aprovado</span></td>
+              </tr>
+
+              <tr>
+                <td>Engenharia de Software</td>
+                <td>Profª. Renata</td>
+                <td>7.0</td>
+                <td>85%</td>
+                <td><span class="badge aprovado">Aprovado</span></td>
+              </tr>
+
+              <tr>
+                <td>Matemática Aplicada</td>
+                <td>Prof. Lucas</td>
+                <td>6.0</td>
+                <td>78%</td>
+                <td><span class="badge atencao">Atenção</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="painel avisos">
+          <h2>Avisos Importantes</h2>
+
+          <div class="aviso">
+            <span>Hoje</span>
+            <h4>Entrega de Trabalho</h4>
+            <p>O trabalho de HTML e CSS deve ser enviado no SIGA até 23h59.</p>
+          </div>
+
+          <div class="aviso">
+            <span>15 Maio</span>
+            <h4>Semana de Provas</h4>
+            <p>As avaliações bimestrais começam na próxima semana.</p>
+          </div>
+
+          <div class="aviso">
+            <span>Biblioteca</span>
+            <h4>Novos materiais</h4>
+            <p>Livros de programação e banco de dados estão disponíveis.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="painel horarios">
+        <div class="titulo-painel">
+          <h2>Horário das Aulas</h2>
+          <button>Exportar horário</button>
+        </div>
+
+        <div class="lista-horarios">
+          <div>
+            <strong>Segunda-feira</strong>
+            <p>Desenvolvimento Web I</p>
+            <span>19:00 às 22:30</span>
+          </div>
+
+          <div>
+            <strong>Terça-feira</strong>
+            <p>Banco de Dados</p>
+            <span>19:00 às 22:30</span>
+          </div>
+
+          <div>
+            <strong>Quarta-feira</strong>
+            <p>Algoritmos e Lógica</p>
+            <span>19:00 às 22:30</span>
+          </div>
+
+          <div>
+            <strong>Quinta-feira</strong>
+            <p>Engenharia de Software</p>
+            <span>19:00 às 22:30</span>
+          </div>
+
+          <div>
+            <strong>Sexta-feira</strong>
+            <p>Matemática Aplicada</p>
+            <span>19:00 às 22:30</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
